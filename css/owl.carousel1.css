@@ -1,0 +1,133 @@
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel1 .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel1{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel1 .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel1 .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel1 .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+
+.owl-carousel1 .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing {
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel1  .owl-wrapper,
+.owl-carousel1  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+/* =====================
+   Blog Post
+   ===================== */
+
+
+#blog1 {
+  padding:100px 0;
+  background: #f1f1f1;
+}
+#blog-post1 .block {
+  background: #fff;
+  margin:0 5px;
+}
+
+#blog-post1  .content {
+  padding:30px 25px;
+  text-align: center;
+}
+#blog-post1 .content h4 {
+  text-transform: capitalize;
+  position: relative;
+  margin: 20px 0 10px;
+  padding: 10px 0;
+}
+#blog-post1 .content h4 a {
+  color: #333;
+}
+#blog-post1 .content h4 a:hover {
+ color: #80d6a3;
+}
+#blog-post1 .content h4::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -6px;
+    width: 30px;
+    height: 2px;
+    background-color: #80d6a3;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+#blog-post1 .content small {
+  color: #999;
+}
+#blog-post1 .content p {
+  margin-top: 10px;
+  color: #777;
+}
+#blog-post1 .content .btn-read {
+  background: #80d6a3;
+  color: #fff;
+  padding:10px 20px;
+  font-size: 13px;
+  margin-top: 15px;
+  border-radius: 25px;
+}
+
+/* =====================
+   Blog Page
+   ===================== */
